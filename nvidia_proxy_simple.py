@@ -11,16 +11,16 @@ import urllib.error
 import time
 
 # NVIDIA API 配置
-NVIDIA_API_KEY = "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"
+NVIDIA_API_KEY = "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"
 NVIDIA_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 # 模型映射
 MODEL_MAPPING = {
-    "claude-3-5-sonnet-20241022": "qwen/qwen2.5-coder-7b-instruct",
-    "claude-3-5-haiku-20241022": "google/gemma-3-4b-it",
+    "claude-3-5-sonnet-20241022": "qwen/qwen2.5-coder-32b-instruct",
+    "claude-3-5-haiku-20241022": "meta/llama-3.3-70b-instruct",
     "claude-3-opus-20240229": "qwen/qwen3-235b-a22b",
-    "claude-sonnet-4-20250514": "qwen/qwen2.5-coder-7b-instruct",
-    "default": "qwen/qwen2.5-coder-7b-instruct"
+    "claude-sonnet-4-20250514": "qwen/qwen2.5-coder-32b-instruct",
+    "default": "qwen/qwen2.5-coder-32b-instruct"
 }
 
 class ProxyHandler(BaseHTTPRequestHandler):

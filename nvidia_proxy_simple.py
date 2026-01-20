@@ -38,6 +38,9 @@ class ProxyHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps({"status": "ok"}).encode())
         else:
+
+
+            
             self.send_error(404)
 
     def handle_messages(self):
